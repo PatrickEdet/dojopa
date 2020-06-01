@@ -1,7 +1,7 @@
 /*
 	Dojopa by DOJOPA
 	Dojopa | @pedet
-	Free for personal and commercial use under the CCA 3.0 license (Dojopa/license)
+
 */
 
 (function($) {
