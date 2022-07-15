@@ -41,11 +41,11 @@
 	 */
 	$.fn.panel = function(userConfig) {
 
-		// No elements?
+		// No gallery?
 			if (this.length == 0)
 				return $this;
 
-		// Multiple elements?
+		// Multiple gallery?
 			if (this.length > 1) {
 
 				for (var i=0; i < this.length; i++)
@@ -306,11 +306,11 @@
 			if (typeof (document.createElement('input')).placeholder != 'undefined')
 				return $(this);
 
-		// No elements?
+		// No gallery?
 			if (this.length == 0)
 				return $this;
 
-		// Multiple elements?
+		// Multiple gallery?
 			if (this.length > 1) {
 
 				for (var i=0; i < this.length; i++)
@@ -519,20 +519,20 @@
 	};
 
 	/**
-	 * Moves elements to/from the first positions of their respective parents.
-	 * @param {jQuery} $elements Elements (or selector) to move.
-	 * @param {bool} condition If true, moves elements to the top. Otherwise, moves elements back to their original locations.
+	 * Moves gallery to/from the first positions of their respective parents.
+	 * @param {jQuery} $gallery gallery (or selector) to move.
+	 * @param {bool} condition If true, moves gallery to the top. Otherwise, moves gallery back to their original locations.
 	 */
-	$.prioritize = function($elements, condition) {
+	$.prioritize = function($gallery, condition) {
 
 		var key = '__prioritize';
 
-		// Expand $elements if it's not already a jQuery object.
-			if (typeof $elements != 'jQuery')
-				$elements = $($elements);
+		// Expand $gallery if it's not already a jQuery object.
+			if (typeof $gallery != 'jQuery')
+				$gallery = $($gallery);
 
-		// Step through elements.
-			$elements.each(function() {
+		// Step through gallery.
+			$gallery.each(function() {
 
 				var	$e = $(this), $p,
 					$parent = $e.parent();
